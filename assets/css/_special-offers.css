@@ -1,0 +1,149 @@
+.custom-nav-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  color: rgb(56, 56, 56);
+}
+.custom-nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #ff7777;
+  background-color: transparent;
+  border-color: transparent;
+}
+.custom-nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border-color: transparent;
+}
+
+.offer-details {
+  height: 200px;
+  flex: 0 0 50%;
+}
+.offer-title {
+  height: 50px;
+  overflow: hidden;
+}
+.offer-details a {
+  font-size: 16px;
+  color: #9891ff;
+}
+.offer-rating i {
+  color: #fac74b;
+  font-size: 15px;
+}
+.offer-price s {
+  color: #ff0000;
+  font-size: 16px;
+}
+.offer-price span,
+.countdown-timer {
+  color: #566555;
+  font-size: 16px;
+}
+/* #demo {
+  background-color: #fc5050;
+  color: #efefef;
+  padding: 10px;
+  border-radius: 10px;
+} */
+#demo span {
+  background-color: #efefef;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer-expire-text {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  font-size: 18px;
+  padding: 10px;
+}
+#days,
+#hours,
+#minutes,
+#seconds {
+  position: relative;
+}
+#days::after {
+  content: "روز";
+  position: absolute;
+  top: 35px;
+}
+#hours::after {
+  content: "ساعت";
+  position: absolute;
+  top: 35px;
+}
+#minutes::after {
+  content: "دقیقه";
+  position: absolute;
+  top: 35px;
+}
+#seconds::after {
+  content: "ثانیه";
+  position: absolute;
+  top: 35px;
+}
+.offer-product-image {
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+}
+.offer-product-image img {
+  width: 240px;
+}
+.offer-product-image:hover .first-image,
+.offer-product-image:hover .second-image {
+  transform: translateY(-240px);
+}
+/* .offer-product-image .first-image,.offer-product-image .second-image{
+  transition: .5s ease;
+} */
+.sf-box-shadow {
+  box-shadow: 0 0 1px 1px #efefef;
+  z-index: 1;
+}
+.offer-section-title {
+  right: 0;
+  border-bottom: 2px solid #ff0000;
+  padding-bottom: 3px;
+}
+@media (max-width: 576px) {
+  .custom-nav-tabs .nav-link {
+    padding: 5px;
+  }
+  .offer-price span,
+  .offer-price s,
+  .countdown-timer p,
+  .offer-rating,
+  .offer-title a {
+    font-size: 12px;
+  }
+  .offer-product-image {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
+  .offer-product-image .second-image {
+    display: none;
+  }
+  .offer-product-image:hover .first-image,
+  .offer-product-image:hover .second-image {
+    transform: none;
+  }
+  .offer-section-title {
+    font-size: 10px;
+    bottom: 30px;
+  }
+  .countdown-timer {
+    font-size: 12px;
+  }
+}

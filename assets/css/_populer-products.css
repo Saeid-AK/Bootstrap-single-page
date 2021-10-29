@@ -1,0 +1,17 @@
+.p-title {
+  height: 70px;
+  font-size: 14px;
+}
+.p-price {
+  font-size: 13px;
+}
+.p-img {
+  max-width: 150px;
+}
+.custom-card {
+  border: none;
+  border-radius: 0;
+}
+.custom-card:hover {
+  box-shadow: 0 0 10px 3px #efefef;
+}

@@ -1,0 +1,27 @@
+.cat-desc p {
+  font-size: 13px;
+}
+.cat-img {
+  width: 50px;
+  margin-right: 2px;
+}
+.cat-hover {
+  width: 215px;
+  height: 125px;
+  transition: 0.5s ease;
+}
+.cat-hover img {
+  transition: 0.8s ease;
+}
+.cat-hover:hover {
+  z-index: 1;
+  box-shadow: 0 0 8px 1px rgb(216, 216, 216);
+}
+.cat-hover:hover img {
+  transform: scale(1.5);
+}
+@media (max-width: 576px) {
+  .cat-hover {
+    width: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+.banner-img-hover {
+  overflow: hidden;
+}
+.banner-img-hover img {
+  transition: 0.5s ease;
+}
+.banner-img-hover :hover img {
+  transform: scale(1.1);
+}

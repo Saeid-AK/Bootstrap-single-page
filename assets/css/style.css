@@ -1,0 +1,87 @@
+@import "_top-nav.css";
+@import "_slider.css";
+@import "_shipping.css";
+@import "_ads.css";
+@import "_cat.css";
+@import "_special-offers.css";
+@import "_populer-products.css";
+@import "_banner-section-1.css";
+@import "_footer.css";
+@font-face {
+  font-family: Vazir-Medium;
+  src: url(../fonts/Vazir-Medium.eot) format("eot"),
+    url(../fonts/Vazir-Medium.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Vazir-Medium.woff) format("woff"),
+    url(../fonts/Vazir-Medium.woff2) format("woff2"),
+    url(../fonts/Vazir-Medium.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Vazir-Medium;
+}
+body {
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+}
+li,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+  margin: 0;
+}
+@media (max-width: 576px) {
+  .mt-csm-3 {
+    margin-top: 1rem !important;
+  }
+}
+@media (max-width: 991px) {
+  .mt-clg-3 {
+    margin-top: 1rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1340px !important;
+  }
+}
+.owl-carousel-brand .owl-nav.disabled {
+  top: 80px !important;
+}
+.owl-carousel-brand .owl-nav.disabled button {
+  background-color: #efefeff6 !important;
+}
+.owl-carousel .owl-nav.disabled {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+.owl-carousel .owl-nav {
+  width: 100%;
+  top: 120px;
+}
+.owl-carousel .owl-nav.disabled button {
+  color: #5e5e5ea6;
+  background-color: #efefef80;
+  box-shadow: 0 0 5px 4px #efefef4b;
+  width: 40px;
+  font-size: 50px;
+}
+.owl-carousel .owl-nav.disabled button:hover {
+  background-color: #efefef9d;
+  box-shadow: 0 0 5px 4px #efefef6e;
+}
